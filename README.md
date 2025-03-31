@@ -44,7 +44,7 @@ The analysis is based on:
   ```json
   {
     "class": {
-      "threshold": float,
+      "threshold": str,
       "non_neo_count": int,
       "neo_count": int
     }
