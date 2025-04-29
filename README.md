@@ -74,7 +74,12 @@ python3 find_filter.py digest_data_19-24.csv
 python3 neocp_filter.py digest_data_24.csv optimal_thresholds.json
 ```
 
-**Training models**
+
+**Model Training and Testing**
+
+```
+training_pipeline.py
+```
 
 By default, the code trains four models: GBM, RF, SGD, and a NN. All will be saved in the same 'model' directory.
 
@@ -94,7 +99,10 @@ python training_pipeline.py \
 `features_file`: a file listing the features/columns you'd like to train your models on. If not provided, all features/columns will be used.
 `test_size`: the size of the train/test split
 
-**Testing models**
+
+```
+testing_pipeline.py
+```
 
 To test, execute the testing_pipeline.py, found in src:
 
