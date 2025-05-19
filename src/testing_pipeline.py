@@ -5,10 +5,10 @@ from sklearn.metrics import classification_report, confusion_matrix, accuracy_sc
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from MPC_NEOCP.code.models.libgbm import GBMClassifier
-from MPC_NEOCP.code.models.librf import RFClassifier
-from MPC_NEOCP.code.models.libsgd import SGDClassifierWrapper
-from MPC_NEOCP.code.models.libnn import NNClassifier
+from libgbm import GBMClassifier
+from librf import RFClassifier
+from libsgd import SGDClassifierWrapper
+from libnn import NNClassifier
 
 
 def load_and_evaluate_model(model_name, model_path, X_test, y_test, trksub, ground_truth, neo2, save_dir, save_csv=True, return_probs=True):
