@@ -3,10 +3,10 @@ import os
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-from MPC_NEOCP.code.models.libgbm import GBMClassifier
-from MPC_NEOCP.code.models.librf import RFClassifier
-from MPC_NEOCP.code.models.libsgd import SGDClassifierWrapper
-from MPC_NEOCP.code.models.libnn import NNClassifier
+from libgbm import GBMClassifier
+from librf import RFClassifier
+from libsgd import SGDClassifierWrapper
+from libnn import NNClassifier
 
 
 def prepare_validation_data(training_path, evaluation_path=None, test_size=0.2):
